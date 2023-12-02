@@ -18,8 +18,11 @@ killall -s SIGUSR1 srs_Signal		#srs_Signal是进程名
 srs_Signal进程打印
 
 signal installed, reload=1, reopen=10, fast_quit=15, grace_quit=3
+
 reopen log file, signo=10			#发送SIGUSR1 信号时打印
+
 force gracefully quit, signo=15		#Ctrl+c 强制退出时打印
+
 sig=3, user start gracefully quit	#Ctrl+c 强制退出时打印
 
 
